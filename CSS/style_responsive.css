@@ -1,0 +1,172 @@
+@font-face {
+	font-family: 'nasa';
+	src: url('../Fonts/nasalization-rg.woff2') format('woff2'),
+      url('../Fonts/nasalization-rg.woff') format('woff');
+}
+
+body {
+	background-color: #003247;
+	color: #ffffffff;
+	font-size: 1.255em;
+	font-family: 'nasa', system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+	text-align: center;
+	padding: 1em 0;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+video img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+aside{
+    width: 300px; 
+    padding-left: 20px;
+  }
+  
+  aside section a img{
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-content{
+    flex: 1; 
+    padding-right: 20px;
+  }
+
+nav ul {
+	list-style-type: none;
+	margin: 1em 5;
+	padding: 0.2em;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+}
+
+nav li {
+	display: inline-flex; 
+}
+
+nav li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 0.6em 1em;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+li a:hover {
+	background-color: rgba(34, 34, 34, 0.705);
+}
+
+.active {
+	background-color: rgb(19, 31, 53);
+}
+
+#video video {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 0.5em;
+	width: 100%; 
+}
+
+#video img {
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+section a:link {
+	color: aquamarine;
+}
+
+section a:visited {
+	color: rgb(183, 37, 196);
+}
+
+.list-container {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+}
+
+.listul {
+	flex: 1;
+	padding: 0 10px;
+}
+
+.listul li {
+	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 16px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+
+th {
+	background-color: #333;
+	color: #fff;
+}
+
+
+tr:nth-child(odd) {
+	background-color: #000000;
+}
+
+
+@media screen and (max-width: 768px) {
+	aside {
+		width: 100%; 
+		padding-left: 0;
+	}
+
+	nav li {
+		display: inline-block; 
+	}
+
+	#video video {
+		width: 100%;
+	}
+
+	.listul {
+		flex: 1;
+		padding: 0;
+	}
+
+	.table {
+		overflow-x: auto; 
+	}
+}
